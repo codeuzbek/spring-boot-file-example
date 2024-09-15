@@ -1,0 +1,28 @@
+### Upload Attach
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="testvideo.mp4"
+
+< C:\Users\Bobur_Jumaniyazov\Desktop\spring-boot\test-file\testvideo.mp4
+
+
+### Upload File
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="mazgi_rasm.jpeg"
+
+< C:\Users\Bobur_Jumaniyazov\Desktop\spring-boot\test-file\mazgi_rasm.jpeg
+
+
+### Open simple api
+GET http://localhost:8080/attach/open/mazgi_rasm.jpeg
+
+### Open Attach
+GET http://localhost:8080/attach/load_image/mazgi_rasm.jpeg
+
+### Open general
+GET http://localhost:8080/attach/open_general/mazgi_rasm.jpeg
